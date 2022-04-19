@@ -1,0 +1,240 @@
+
+body{font-family: 'Open Sans',
+sans-serif;
+font-size: 18px;
+font-weight: 400;
+}
+h1{font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+ color: hsl(192, 100%, 9%);
+}
+h5{
+   color: hsl(208, 11%, 55%);
+}
+.main-content{
+    display: grid;
+    width:95% ;
+    height: 250vh;
+    margin: auto;
+}
+.main-content section{
+    width: 100%;
+    height: 50vh;
+}
+/* section-one .............................................................*/
+.section-one{
+    display: grid;
+   grid-template-columns : 50% 50%;
+    grid-template-rows: 2fr 0.5fr 1fr 1fr 1fr 0.5fr;
+    background-color: hsl(193, 100%, 96%);
+}
+.header-one{
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin:0 5%;
+    color: hsl(192, 100%, 9%);
+}
+.header-one h4{
+    display: flex;
+    background-color: white;
+    width:8rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 4px 25px -2px rgba(0, 0, 0, 0.75);
+    margin-right: 5px;
+    font-size: 11px;
+}
+SVG{
+    transform: scaleX(0.8) scaleY(0.8);
+}
+.header-two{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin:0 5%;
+    font-weight: 900px;
+}
+.header-three{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin:3% 5%;
+}
+.header-four{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 50px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    display: flex;
+    align-self:flex-end;
+    justify-content: center;
+    align-items: center;
+    margin:0 5%;
+}
+.header-five{
+    grid-column: 2/3;
+    grid-row: 2/6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 5%;
+}
+ .header-five svg{
+    width: 500px;
+    height: 400px;
+   
+}
+/* section-two...................................................... */
+.section-two{
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 100%;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-content: center;
+    align-items: flex-start;
+}
+.first-one{
+  margin-bottom: -20px;
+}
+.section-two svg{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 450px;
+    height: 450px;
+}
+/* section-three.......................................................... */
+.section-three {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 100%;
+}
+.section-three svg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 350px;
+    height: 450px;
+}
+.second {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.second-one {
+    margin-bottom: -20px;
+}
+/* section four....................................... */
+.section-four {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 100%;
+}
+.section-four svg {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 450px;
+    height: 450px;
+}
+/* section five.................................................................. */
+.section-five{
+    display: grid;
+    background-color: hsl(192, 100%, 9%);
+    grid-template-rows: repeat(7,1fr);
+    grid-template-columns: 30% 20% 20% 30%;
+}
+.five-one{
+    background-color: aliceblue;
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+.ss{
+    background-color: aliceblue;
+    grid-row: 1/3;
+    grid-column: 2/4;
+    border-radius: 15px;
+    display: grid;
+ justify-content: center;
+ grid-auto-rows: 30% 70%;
+ align-items: center;
+}
+.ss h1{
+grid-row: 1/2;
+font-size:20px ;
+}
+.header-four1 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 50px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2/3;
+    align-self:center;
+    justify-self: center;
+}
+.five-two{
+    grid-column: 1/2;
+    grid-row: 4/5;
+transform: scale(0.7,0.7);
+}
+.five-three{
+    grid-column: 1/2;
+    grid-row: 5/8;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 40% 20% 20% 20%;
+    font-size: 12px;
+    color: aliceblue;
+    align-items:flex-start;
+}
+.five-three h6{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.phone{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.faq,
+.car{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+ line-height: 40px;
+color: white;}
+.car{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+.copy{
+    grid-column: 4/5;
+    grid-row: 6/6;
+    color: aliceblue;
+    font-size: 11px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
